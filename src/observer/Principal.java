@@ -20,25 +20,18 @@ public class Principal {
         a = numeroAleatorio.nextInt(20);
         b = numeroAleatorio.nextInt(20);
         c = numeroAleatorio.nextInt(20);
-        
         DadosObservados dadosAplicacao = new DadosObservados();
-
         ObservadorTabela tabela = new ObservadorTabela(dadosAplicacao);
         ObservadorGrafico grafico = new ObservadorGrafico(dadosAplicacao);
-        
         dadosAplicacao.attach(tabela);
         dadosAplicacao.attach(grafico);
-        
         dadosAplicacao.setState(new Dados(a, b, c));
-        
         System.out.println("\n-------------------------"
                 + "\nMudança de Estado...\n"
                 + "-------------------------\n");
-        
         a = numeroAleatorio.nextInt(20);
         b = numeroAleatorio.nextInt(20);
         c = numeroAleatorio.nextInt(20);
-        
         dadosAplicacao.setState(new Dados(a, b, c));
         
 

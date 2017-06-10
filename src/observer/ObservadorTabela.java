@@ -14,10 +14,9 @@ public class ObservadorTabela extends Observador {
     public ObservadorTabela(DadosObservados dados) {
         super(dados);
     }
- 
     @Override
     public void update() {
-        System.out.println("Observador - Tabela:\nValor A: " + dados.getState().valorA
+        System.out.println("Observador 1 - Tabela:\nValor A: " + dados.getState().valorA
                 + "\nValor B: " + dados.getState().valorB + "\nValor C: "
                 + dados.getState().valorC);
     }

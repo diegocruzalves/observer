@@ -18,7 +18,7 @@ public class ObservadorGrafico extends Observador{
     @Override
     public void update() {
         
-        System.out.println("\nGráfico de Barra: ");
+        System.out.println("\nObservador 2 - Gráfico de Barra: ");
         
         System.out.print("Valor A: ");
         for(int i = 0; i < dados.getState().valorA; i++){

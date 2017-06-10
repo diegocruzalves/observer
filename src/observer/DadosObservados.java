@@ -12,25 +12,20 @@ import java.util.ArrayList;
  * @author diegocruzalves
  */
 public class DadosObservados {
-    Dados dados;
-    ArrayList<Observador> observadores = new ArrayList<Observador>();
+    protected Dados dados;
+    protected ArrayList<Observador> observadores = new ArrayList<Observador>();
     public void attach(Observador observador){
-        observadores.add(observador);
-    }
+        observadores.add(observador);}
     public void detach(int indice){
-        observadores.remove(indice);
-    }
+        observadores.remove(indice);}
     public void setState(Dados dados){
         this.dados = dados;   
         //Notifica os Observadores sobre a mudança de estado
-        notificaObservadores();
-    }
+        notificaObservadores();}
     private void notificaObservadores(){
         for(Observador observador : observadores){
-            observador.update();
-        }
+            observador.update();}
     }
     public Dados getState(){
-        return dados;
-    }
+        return dados;}
 }
